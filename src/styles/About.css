@@ -1,0 +1,35 @@
+/* About.css */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Roboto", sans-serif; /* Or any font you prefer */
+}
+
+h1 {
+  color: #333; /* Dark grey for the heading */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Responsive font size */
+}
+
+p {
+  color: #666; /* Lighter grey for the paragraph, improves readability */
+  line-height: 1.6;
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 20px; /* Spacing between paragraphs if you add more */
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 80%; /* Controls the text width for better readability on larger screens */
+  }
+}

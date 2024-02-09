@@ -1,0 +1,85 @@
+/* Menu.css */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background for contrast */
+}
+
+.menuTitle {
+  font-size: 2.5rem; /* Larger font size */
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif; /* Example font family */
+}
+
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.productCard {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  flex-basis: calc(33.333% - 20px);
+  max-width: 500px;
+  min-width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.productImage {
+  margin: 40px 0 0 106px;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: fit-content; /* Fixed height for uniformity */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.productContent {
+  padding: 20px;
+}
+
+.productName {
+  font-size: 1.4rem; /* Larger font size */
+  margin-bottom: 15px;
+  color: #333; /* Darker text color for contrast */
+  font-weight: bold; /* Bold font weight */
+}
+
+.productDescription {
+  font-size: 1rem; /* Standard font size */
+  color: #666; /* Lighter text color for readability */
+  line-height: 1.5; /* Improved line spacing */
+  flex-grow: 1; /* Ensure description takes up available space */
+}
+
+@media (max-width: 768px) {
+  .productCard {
+    flex-basis: calc(50% - 20px);
+    .productImage{
+      margin: 40px 0 0 75px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .productCard {
+    flex-basis: 100%;
+  }
+}
