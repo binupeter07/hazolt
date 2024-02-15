@@ -72,8 +72,8 @@
 @media (max-width: 768px) {
   .productCard {
     flex-basis: calc(50% - 20px);
-    .productImage{
-      margin: 40px 0 0 200px;
+    .productImage {
+      margin: 40px 0 0 85px;
     }
   }
 }
@@ -81,8 +81,8 @@
 @media (max-width: 480px) {
   .productCard {
     flex-basis: 100%;
-    .productImage{
-      margin: 40px 0 0 200px;
+    .productImage {
+      margin: 40px 0 0 135px;
     }
   }
 }
