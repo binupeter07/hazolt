@@ -73,7 +73,7 @@
   .productCard {
     flex-basis: calc(50% - 20px);
     .productImage{
-      margin: 40px 0 0 75px;
+      margin: 40px 0 0 100px;
     }
   }
 }
