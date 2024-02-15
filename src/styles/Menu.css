@@ -81,5 +81,8 @@
 @media (max-width: 480px) {
   .productCard {
     flex-basis: 100%;
+    .productImage{
+      margin: 40px 0 0 75px;
+    }
   }
 }
